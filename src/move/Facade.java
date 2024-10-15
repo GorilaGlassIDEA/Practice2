@@ -10,7 +10,10 @@ public class Facade extends PhysicalMove {
     protected String describe() {
         return "используется атака Facade!";
     }
-
+    @Override
+    protected boolean checkAccuracy(Pokemon pokemon, Pokemon pokemon1) {
+        return true;
+    }
     public Facade(Pokemon pokemon) {
         super(Type.NORMAL, 40, 100);
         Status status = pokemon.getCondition();

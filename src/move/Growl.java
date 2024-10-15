@@ -10,6 +10,11 @@ public class Growl extends PhysicalMove {
     }
 
     @Override
+    protected boolean checkAccuracy(Pokemon pokemon, Pokemon pokemon1) {
+        return true;
+    }
+
+    @Override
     protected void applyOppEffects(Pokemon pokemon) {
         pokemon.setLevel(pokemon.getLevel() - 1);
 //    понижает уровень обороняющегося покемона на 1 пункт

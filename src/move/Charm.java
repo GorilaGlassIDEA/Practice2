@@ -8,7 +8,10 @@ public class Charm extends PhysicalMove {
     public Charm() {
         super(Type.FAIRY, 0, 100);
     }
-
+    @Override
+    protected boolean checkAccuracy(Pokemon pokemon, Pokemon pokemon1) {
+        return true;
+    }
     @Override
     protected String describe() {
         return "использует атаку Charm!";

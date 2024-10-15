@@ -9,7 +9,10 @@ public class Leer extends StatusMove {
     public Leer() {
         super(Type.NORMAL, 0, 100);
     }
-
+    @Override
+    protected boolean checkAccuracy(Pokemon pokemon, Pokemon pokemon1) {
+        return true;
+    }
     @Override
     protected void applyOppEffects(Pokemon pokemon) {
         pokemon.setMod(Stat.DEFENSE, (int) pokemon.getStat(Stat.DEFENSE) - 1);

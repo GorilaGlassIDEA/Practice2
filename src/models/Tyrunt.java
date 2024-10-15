@@ -10,5 +10,6 @@ public class Tyrunt extends Pokemon {
     public Tyrunt(String name, int level) {
         super(name, level);
         setMove(new RockSlide(), new RockPolish(), new Tackle());
+        setStats(58,89,77,45,45,48);
     }
 }
