@@ -13,7 +13,7 @@ public class RockSlide extends PhysicalMove {
 
     @Override
     protected void applyOppEffects(Pokemon pokemon) {
-        int perSecond = new Random().nextInt(1, 100);
+        double perSecond = (Math.random()*100);
         if (perSecond > 70) {
             pokemon.attack(pokemon);
         }

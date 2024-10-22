@@ -19,7 +19,7 @@ public class HeadSmash extends PhysicalMove {
 
     @Override
     protected void applySelfEffects(Pokemon pokemon) {
-        int perSecond = new Random().nextInt(1, 100);
+        double perSecond = (Math.random()*100);
         if (perSecond < 51) {
             pokemon.attack(pokemon);
         }

@@ -19,8 +19,8 @@ public class IceBeam extends SpecialMove {
 
     @Override
     protected void applyOppEffects(Pokemon pokemon) {
-        int perSecond = new Random().nextInt(1, 100);
-        if (perSecond < 11) {
+        double perSecond = Math.random();
+        if ((perSecond * 100)< 11) {
             Effect.freeze(pokemon);
         }
         // 10% шанс заморозки противника

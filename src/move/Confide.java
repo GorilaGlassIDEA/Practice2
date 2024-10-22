@@ -9,7 +9,7 @@ import java.util.Random;
 public class Confide extends SpecialMove {
     @Override
     protected String describe() {
-        return "использует атаку Confide!";
+        return "использует атаку  Confide!";
     }
 
     public Confide() {
@@ -24,7 +24,7 @@ public class Confide extends SpecialMove {
 
     @Override
     protected void applyOppDamage(Pokemon pokemon, double v) {
-        v = new Random().nextInt(10,100)/10.0;
+        v = (Math.random()*100)/10.0;
         super.applyOppDamage(pokemon, v);
     }
 }
